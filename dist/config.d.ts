@@ -1,8 +1,13 @@
 export interface AsyncSimple {
     [uid: string]: string[];
 }
+export interface AsyncList {
+    pageCount: number;
+    page: number;
+    fields: string[];
+}
 export interface AsyncLists {
-    [uid: string]: string[];
+    [uid: string]: AsyncList;
 }
 export interface ConfigProps {
     field: string;

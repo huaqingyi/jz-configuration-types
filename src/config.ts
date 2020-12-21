@@ -3,9 +3,15 @@ export interface AsyncSimple {
     [uid: string]: string[]; // uid 表名: 字段名
 }
 
+export interface AsyncList {
+    pageCount: number;
+    page: number;
+    fields: string[];
+}
+
 // 返回 列表
 export interface AsyncLists {
-    [uid: string]: string[]; // uid 表名: 字段名
+    [uid: string]: AsyncList; // uid 表名: 字段名
 }
 
 export interface ConfigProps {
