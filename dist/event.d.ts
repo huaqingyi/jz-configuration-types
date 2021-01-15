@@ -4,5 +4,5 @@ export interface Event {
     config: HandleActionConfig;
 }
 export interface Events {
-    [uid: string]: Event;
+    [uid: string]: Event[];
 }

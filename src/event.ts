@@ -6,5 +6,5 @@ export interface Event {
 }
 
 export interface Events {
-    [uid: string]: Event;
+    [uid: string]: Event[];
 }
